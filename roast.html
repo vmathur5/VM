@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Your Brain</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Animation */
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1> .WRITE YOUR NAME AND I WILL TELL WHO ARE YOU.</h1>                              (write you name in capital letters)
+
+
+    <form id="nameForm">
+        <input type="text" id="firstNameInput" placeholder="Enter your first name" required>
+        <input type="text" id="surnameInput" placeholder="Enter your surname" required>
+        <button type="button" onclick="checkName()">Submit</button>
+    </form>
+    <p class="error-message" id="errorMessage"></p>
+
+    <script>
+        function checkName() {
+            var firstName = document.getElementById("firstNameInput").value;
+            var surname = document.getElementById("surnameInput").value;
+            var errorMessageElement = document.getElementById("errorMessage");
+            var submitButton = document.querySelector("button");
+
+            // Check if the entered name and surname are correct
+            // You can replace "John" and "Doe" with the actual correct values
+            if (firstName === "LAKSHYA" && surname === "NITHARWAL") {
+                // Apply fade-out animation
+                submitButton.classList.add("fade-out");
+
+                // Redirect to another website after the animation duration (500ms)
+                setTimeout(function() {
+                    window.location.href = "roast2.html";
+                }, 500);
+            } else {
+                errorMessageElement.textContent = "Incorrect name or surname. Please try again.";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* Your regular styles go here */
+
+/* Media query for devices with a maximum width of 600 pixels */
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600 pixels wide */
+  }
+  
+  /* Media query for devices with a maximum width of 900 pixels */
+  @media only screen and (max-width: 900px) {
+    /* Styles for screens up to 900 pixels wide */
+  }
+  
+  /* Additional media queries and styles as needed */
+  

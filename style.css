@@ -1,0 +1,81 @@
+/* Your regular styles go here */
+
+/* Media query for devices with a maximum width of 600 pixels */
+@media only screen and (max-width: 600px) {
+    /* Styles for screens up to 600 pixels wide */
+  }
+  
+  /* Media query for devices with a maximum width of 900 pixels */
+  @media only screen and (max-width: 900px) {
+    /* Styles for screens up to 900 pixels wide */
+  }
+  
+  /* Additional media queries and styles as needed */
+  
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Add some additional decoration */
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Style the page title differently */
+h2 {
+    color: #4caf50;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Add a subtle border to the image */
+img {
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+}
+
+/* Hover effect on the image */
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Apply a fade-in effect on the entire page */
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
